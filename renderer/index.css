@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    app-region: drag;
+}
+
+button {
+    app-region: no-drag;
+}
+
+audio {
+    app-region: no-drag;
+}
+
+.main-container {
+    background-image: url(../music_app_images/background_img.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+}
+
+.window-button-container {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    margin-left: 15px;
+    z-index: 1;
+}
+
+.window-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.window-img {
+    width: 100%;   
+    height: 100%; 
+    object-fit: contain
+}
+
+.music-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 220px;
+    width: 220px;
+}
+
+.song-cover-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+}
+
+#tuxedo-sam-img {
+    width: 120px;
+    z-index: 1;
+}
+
+#song-cover-img {
+    margin: -13px;
+    border: 4px solid black;
+    max-width: 216px; 
+    width: 216px;
+}
+
+.song-info-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 220px;
+}
+
+#song-title {
+    align-items: left;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    height: 20px;
+    max-height: 20px;
+}
+
+#artist-name {
+    align-items: left;
+    width: 100%;
+    font-size: 15px;
+    margin: 5px 0px 10px 0px;
+}
+
+#audio-file {
+    align-items: center;
+    width: 220px;
+    height: 15px;
+    margin-top: 8px;
+}
+
+#progress-bar-img {
+    width: 100%;
+}
+
+#progress-img {
+    width: 22px;
+    z-index: 1;
+    margin-top: -18px;
+    margin-left: 0;
+}
+
+.audio-control-container {
+    display: flex;
+    margin: 10px;
+}
+
+.audio-control-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+}

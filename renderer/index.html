@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Music Player</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body onload="setSong()">
+        <div class="main-container">
+            <div class="window-button-container">
+                <button class="window-button" id="close-button" onclick="closeWindow()"><img class="window-img" id="close-button-img" src="../music_app_images/close.png"></button>
+                <button class="window-button" id="minimise-button" ><img class="window-img" id="minimise-button-img" src="../music_app_images/minimise.png"></button>
+            </div>
+
+            <div class="music-player-container">
+                <div class="song-cover-container">
+                    <img id="tuxedo-sam-img" src="../music_app_images/tuxedo_sam.png">
+                    <img id="song-cover-img">
+                </div>
+                
+                <div class="song-info-container">
+                    <p id="song-title"></p>
+                    <p id="artist-name"></p>
+                    <img id="progress-bar-img" src="../music_app_images/progress_bar.png">
+                    <img id="progress-img" src="../music_app_images/heart_progress.png">
+                    <audio id="audio-file">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="audio-control-container">
+                    <button class="audio-control-button" id="previous-button" onclick="previousSong()"><img class="audio-control-img" src="../music_app_images/previous.png"></button>
+                    <button class="audio-control-button" id="play-pause-button" onclick="playPauseSong()"><img id="audio-control-img" src="../music_app_images/pause.png"></button>
+                    <button class="audio-control-button" id="skip-button" onclick="nextSong()"><img class="audio-control-img" src="../music_app_images/skip.png"></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="music_player.js"></script>
+    </body>
+</html>
