@@ -6,17 +6,14 @@ const songs = [  // song name, artist, img, audio file
 ];
 let current_song = 0;
 let audio_play = false;
-
-// function closeWindow() {
-//     window.close();
-// }
+let audio = document.getElementById("audio-file");
 
 document.addEventListener("DOMContentLoaded", () => {
     const minimiseButton = document.getElementById("close-button");
 
     if (window.electron) {
         minimiseButton.addEventListener("click", () => {
-            console.log("Minimizing window...");
+            console.log("Closing window...");
             window.electron.close();
         });
     } else {
@@ -82,11 +79,6 @@ function pauseSong() {
     audio_play = false;
     document.getElementById("audio-control-img").src = "../music_app_images/pause.png";
 }
-
-
-
-
-let audio = document.getElementById("audio-file");
 
 audio.ontimeupdate = function() {
     updateProgress();

@@ -7,11 +7,7 @@ body {
     app-region: drag;
 }
 
-button {
-    app-region: no-drag;
-}
-
-audio {
+button, audio {
     app-region: no-drag;
 }
 
